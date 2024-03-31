@@ -27,7 +27,9 @@ const App = () => {
         {transcript}
       </div>
       <div className="btn-style">
-        <button onClick={setCopied}>{isCopied ? "Copied!" : "Copy"}</button>
+        <button onClick={setCopied}>
+          {isCopied ? "Copied!" : "Copy to clipboard"}
+        </button>
         <button onClick={startListening}>▶</button>
         <button onClick={SpeechRecognition.stopListening}>⏸ </button>
       </div>
